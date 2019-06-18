@@ -120,6 +120,12 @@
 		83F550E0155E030800E95D3B /* objc-cache-old.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83F550DF155E030800E95D3B /* objc-cache-old.mm */; };
 		87BB4EA70EC39854005D08E1 /* objc-probes.d in Sources */ = {isa = PBXBuildFile; fileRef = 87BB4E900EC39633005D08E1 /* objc-probes.d */; };
 		9672F7EE14D5F488007CEC96 /* NSObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9672F7ED14D5F488007CEC96 /* NSObject.mm */; };
+		D06C896222B8BD99001C29D3 /* Person.mm in Sources */ = {isa = PBXBuildFile; fileRef = D06C896122B8BD99001C29D3 /* Person.mm */; };
+		D06C896522B8BE24001C29D3 /* School.mm in Sources */ = {isa = PBXBuildFile; fileRef = D06C896422B8BE24001C29D3 /* School.mm */; };
+		D06C896822B8C1D6001C29D3 /* Woman.m in Sources */ = {isa = PBXBuildFile; fileRef = D06C896722B8C1D6001C29D3 /* Woman.m */; };
+		D06C896B22B8C227001C29D3 /* Woman+XYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D06C896A22B8C227001C29D3 /* Woman+XYExtension.m */; };
+		D06C896E22B8C247001C29D3 /* Woman+XYExtension1.m in Sources */ = {isa = PBXBuildFile; fileRef = D06C896D22B8C247001C29D3 /* Woman+XYExtension1.m */; };
+		D06C897422B8CB32001C29D3 /* Other.m in Sources */ = {isa = PBXBuildFile; fileRef = D06C897322B8CB32001C29D3 /* Other.m */; };
 		D084FD1821EC5A54008D199B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D084FD1721EC5A54008D199B /* AppDelegate.m */; };
 		D084FD1B21EC5A54008D199B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D084FD1A21EC5A54008D199B /* ViewController.m */; };
 		D084FD1E21EC5A54008D199B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D084FD1C21EC5A54008D199B /* Main.storyboard */; };
@@ -279,6 +285,18 @@
 		87BB4E900EC39633005D08E1 /* objc-probes.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; name = "objc-probes.d"; path = "runtime/objc-probes.d"; sourceTree = "<group>"; };
 		9672F7ED14D5F488007CEC96 /* NSObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NSObject.mm; path = runtime/NSObject.mm; sourceTree = "<group>"; };
 		BC8B5D1212D3D48100C78A5B /* libauto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libauto.dylib; path = /usr/lib/libauto.dylib; sourceTree = "<absolute>"; };
+		D06C896022B8BD99001C29D3 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D06C896122B8BD99001C29D3 /* Person.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Person.mm; sourceTree = "<group>"; };
+		D06C896322B8BE24001C29D3 /* School.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = School.h; sourceTree = "<group>"; };
+		D06C896422B8BE24001C29D3 /* School.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = School.mm; sourceTree = "<group>"; };
+		D06C896622B8C1D6001C29D3 /* Woman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Woman.h; sourceTree = "<group>"; };
+		D06C896722B8C1D6001C29D3 /* Woman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Woman.m; sourceTree = "<group>"; };
+		D06C896922B8C227001C29D3 /* Woman+XYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Woman+XYExtension.h"; sourceTree = "<group>"; };
+		D06C896A22B8C227001C29D3 /* Woman+XYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Woman+XYExtension.m"; sourceTree = "<group>"; };
+		D06C896C22B8C247001C29D3 /* Woman+XYExtension1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Woman+XYExtension1.h"; sourceTree = "<group>"; };
+		D06C896D22B8C247001C29D3 /* Woman+XYExtension1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Woman+XYExtension1.m"; sourceTree = "<group>"; };
+		D06C897222B8CB32001C29D3 /* Other.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Other.h; sourceTree = "<group>"; };
+		D06C897322B8CB32001C29D3 /* Other.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Other.m; sourceTree = "<group>"; };
 		D084FD1421EC5A53008D199B /* objc_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objc_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D084FD1621EC5A54008D199B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D084FD1721EC5A54008D199B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -414,6 +432,18 @@
 			isa = PBXGroup;
 			children = (
 				5255259A21C68E3C00072CE6 /* main.mm */,
+				D06C896022B8BD99001C29D3 /* Person.h */,
+				D06C896122B8BD99001C29D3 /* Person.mm */,
+				D06C896322B8BE24001C29D3 /* School.h */,
+				D06C896422B8BE24001C29D3 /* School.mm */,
+				D06C896622B8C1D6001C29D3 /* Woman.h */,
+				D06C896722B8C1D6001C29D3 /* Woman.m */,
+				D06C896922B8C227001C29D3 /* Woman+XYExtension.h */,
+				D06C896A22B8C227001C29D3 /* Woman+XYExtension.m */,
+				D06C896C22B8C247001C29D3 /* Woman+XYExtension1.h */,
+				D06C896D22B8C247001C29D3 /* Woman+XYExtension1.m */,
+				D06C897222B8CB32001C29D3 /* Other.h */,
+				D06C897322B8CB32001C29D3 /* Other.m */,
 			);
 			path = "objc-test";
 			sourceTree = "<group>";
@@ -843,7 +873,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D06C897422B8CB32001C29D3 /* Other.m in Sources */,
+				D06C896822B8C1D6001C29D3 /* Woman.m in Sources */,
+				D06C896E22B8C247001C29D3 /* Woman+XYExtension1.m in Sources */,
+				D06C896B22B8C227001C29D3 /* Woman+XYExtension.m in Sources */,
+				D06C896222B8BD99001C29D3 /* Person.mm in Sources */,
 				5255259B21C68E3C00072CE6 /* main.mm in Sources */,
+				D06C896522B8BE24001C29D3 /* School.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2183,10 +2183,12 @@ load_images(const char *path __unused, const struct mach_header *mh)
     // Discover load methods
     {
         mutex_locker_t lock2(runtimeLock);
+        // 准备所有类的load方法
         prepare_load_methods((const headerType *)mh);
     }
 
     // Call +load methods (without runtimeLock - re-entrant)
+    // 调用所有准备好的+load方法
     call_load_methods();
 }
 
@@ -2848,8 +2850,10 @@ static void schedule_class_load(Class cls)
     if (cls->data()->flags & RW_LOADED) return;
 
     // Ensure superclass-first ordering
+    // 值得注意的是将一个类添加到列表之前，会先检查其父类，符合时会先把父类添加到列表中再填加子类，最终这个列表决定了`+load`方法的调用顺序。
     schedule_class_load(cls->superclass);
-
+    
+    // 将类添加到一个全局列表中
     add_class_to_loadable_list(cls);
     cls->setInfo(RW_LOADED); 
 }
@@ -2863,15 +2867,17 @@ bool hasLoadMethods(const headerType *mhdr)
     return false;
 }
 
+// 调用 prepare_load_methods 对 load 方法的调用进行准备（将需要调用 load 方法的类添加到一个列表中）
 void prepare_load_methods(const headerType *mhdr)
 {
     size_t count, i;
 
     runtimeLock.assertLocked();
-
+    // 通过`_getObjc2NonlazyClassList`函数获取所有类的列表
     classref_t *classlist = 
         _getObjc2NonlazyClassList(mhdr, &count);
     for (i = 0; i < count; i++) {
+        // 会通过`remapClass`获取类对应的指针，然后调用`schedule_class_load` 递归地将当前类和父类没有调用的`+load`方法添加到列表。
         schedule_class_load(remapClass(classlist[i]));
     }
 

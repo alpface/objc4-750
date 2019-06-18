@@ -1379,11 +1379,11 @@ struct swift_class_t : objc_class {
 
 
 struct category_t {
-    const char *name;
-    classref_t cls;
-    struct method_list_t *instanceMethods;
-    struct method_list_t *classMethods;
-    struct protocol_list_t *protocols;
+    const char *name; // 分类所属宿主类的名字，比如NSObject
+    classref_t cls;  // cls是一个一级指针，指向的是分类宿主类的对象地址
+    struct method_list_t *instanceMethods;  // 实例方法列表
+    struct method_list_t *classMethods;     // 类方法列表
+    struct protocol_list_t *protocols;      // 协议列表
     struct property_list_t *instanceProperties;
     // Fields below this point are not always present on disk.
     struct property_list_t *_classProperties;
